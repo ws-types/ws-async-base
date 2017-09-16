@@ -8,7 +8,7 @@ npm install ws-async-base
 ## Use it
 First, make extends for your custom class:
 ```typescript
-export class MyClass extends AsyncClassBase {
+export class MyClass extends AsyncableClassBase {
     // ......
 }
 ```
