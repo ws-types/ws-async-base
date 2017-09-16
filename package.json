@@ -1,0 +1,20 @@
+{
+  "name": "ws-async-base",
+  "version": "1.0.1",
+  "description": "a base class for delayable-async class in ES5(ES6 better) for javascript and typescript.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ws-types/ws-async-base.git"
+  },
+  "author": "wallace sun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ws-types/ws-async-base/issues"
+  },
+  "homepage": "https://github.com/ws-types/ws-async-base#readme"
+}
