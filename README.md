@@ -20,5 +20,21 @@ testFuct = async () => {
     // DO work 02 ......
 }
 ```
+Or you and wait in your code like this:
+```typescript
+testFuct = async () => {
+    await this.DoAndWait(()=>{
+        console.log('I am your father!');
+    }, 5000);
+    console.log('hhhhhh');
+}
+
+testFuct = async () => {
+    await this.WaitAndDo(()=>{
+        console.log('I am your mother!');
+    }, 5000);
+    console.log('hhhhhh');
+}
+```
 
 It's easy.

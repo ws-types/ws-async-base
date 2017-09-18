@@ -38,11 +38,39 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var AsyncableClassBase = (function () {
     function AsyncableClassBase() {
         var _this = this;
-        this.Delay = function (milisecond) { return __awaiter(_this, void 0, void 0, function () {
+        this.Delay = function (miliseconds) { return __awaiter(_this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                return [2 /*return*/, new Promise(function () { return setTimeout(function (owner) {
-                        owner();
-                    }, milisecond); })];
+                return [2 /*return*/, new Promise(function (resolve) {
+                        setTimeout(resolve, miliseconds);
+                    })];
+            });
+        }); };
+        this.DoAndWait = function (action, miliseconds) { return __awaiter(_this, void 0, void 0, function () {
+            var result;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, action()];
+                    case 1:
+                        result = _a.sent();
+                        return [4 /*yield*/, this.Delay(miliseconds)];
+                    case 2:
+                        _a.sent();
+                        return [2 /*return*/, result];
+                }
+            });
+        }); };
+        this.WaitAndDo = function (action, miliseconds) { return __awaiter(_this, void 0, void 0, function () {
+            var result;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.Delay(miliseconds)];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, action()];
+                    case 2:
+                        result = _a.sent();
+                        return [2 /*return*/, result];
+                }
             });
         }); };
     }

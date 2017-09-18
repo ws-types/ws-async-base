@@ -1,6 +1,6 @@
 {
   "name": "ws-async-base",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a base class for delayable-async class in ES5(ES6 better) for javascript and typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
