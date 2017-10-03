@@ -4,8 +4,15 @@
   "description": "a base class for delayable-async class in ES5(ES6 better) for javascript and typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "devDependencies": {
+    "ts-loader": "^2.3.7",
+    "tslint": "~5.3.2",
+    "typescript": "^2.5.0",
+    "webpack": "^3.6.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,5 @@
 # Asyncable class base : Delay in your custom class as sync-syntax is enabled.
+[![Build Status](https://travis-ci.org/ws-types/ws-async-base.svg?branch=master)](https://travis-ci.org/ws-types/ws-async-base)
 
 install this package:
 ```npm
